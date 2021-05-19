@@ -1,6 +1,7 @@
 # Landscape Classification
 Zhendong Cao, Phil Wernette, Jaap Nienhuis
-**Scroll down for tasks**
+
+(scroll down for action items/tasks)
 
 ## Objective
 Apply image classification (https://developers.google.com/earth-engine/guides/classification) and image segmentation (https://en.wikipedia.org/wiki/Image_segmentation) to obtain landform characteristics of river deltas
