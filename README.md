@@ -15,12 +15,31 @@ Needs data to source (collect rasters that we think will predict delta occurrenc
 Use objective based methods to link neighbouring river delta pixels
 https://developers.google.com/earth-engine/guides/image_objects
 
+### Area of Interest
+![sample aoi](/images/sample_map.PNG)
+
 ### Input Datasets (subject to change)
 - Elevation: MERIT DEM: Multi-Error-Removed Improved-Terrain DEM (https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3)
+
+![elevation map](/images/mdem.PNG)
 - Imagery: Landsat 8 Tier 1 (https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C01_T1_SR)
+    - Includes ALL available bands
+
+![landcover8 tier 1 imagery](/images/l8fc.PNG)
 - Land Cover: NLCD: USGS National Land Cover Database (https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2016_REL)
-- Lithology (https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_US_lithology)
-- Topographic Diversity: Global SRTM Topographic Diversity (https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_US_topoDiversity)
+
+![landcover map](/images/landcover.PNG)
+- Soil Great Groups: OpenLandMap USDA soil taxonomy great groups (https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_GRTGROUP_USDA-SOILTAX_C_v01)
+
+![soil great groups map](/images/sgg.PNG)
+- Soil Organic Carbon Content: OpenLandMap Soil organic carbon content (https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_ORGANIC-CARBON_USDA-6A1C_M_v02)
+- Soil Water Content: OpenLandMap Soil water content at 33kPa (field capacity) (https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_SOL_SOL_WATERCONTENT-33KPA_USDA-4B1C_M_v01)
+    - Available Depths: 0cm, 30 cm, 60 cm, 100cm, 200cm
+
+![soil water content map](/images/sm30cm.PNG)
+- Topographic Diversity: Global SRTM Topographic Diversity (https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_Global_SRTM_topoDiversity)
+
+![topographic diversity index map](/images/tdi.PNG)
 
 ### Programs/Languages
 - Google Colab Notebooks
