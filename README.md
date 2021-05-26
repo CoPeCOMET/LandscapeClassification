@@ -1,5 +1,5 @@
 # Landscape Classification (CoPe COMET sprint)
-Zhendong Cao, Phil Wernette, Jaap Nienhuis
+Zhendong Cao, Phil Wernette, Jaap Nienhuis, test
 
 ## Objective
 Apply image classification (see https://developers.google.com/earth-engine/guides/classification) and image segmentation (see https://en.wikipedia.org/wiki/Image_segmentation) to obtain landform characteristics of river deltas using Google Earth Engine code and available data.
