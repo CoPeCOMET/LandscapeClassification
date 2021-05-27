@@ -17,7 +17,7 @@ Use connected components object-based methods to group delta pixels https://deve
 Needs output from image classification
 
 ### Area of Interest
-![sample aoi](/images/sample_map.PNG)
+![sample aoi](/images/example_map.PNG)
 
 ### Input Datasets (subject to change)
 - Elevation: MERIT DEM: Multi-Error-Removed Improved-Terrain DEM (https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3)
@@ -42,8 +42,10 @@ Needs output from image classification
 
 ![topographic diversity index map](/images/tdi.PNG)
 
+- Segmented deltas based on preliminary classification data
 ![segmented deltas based on preliminary classification data](/images/object_method_1.png)
 
+- Vectorized delta outlines
 ![vectorized delta polygons](/images/object_method_2.png)
 
 ### Programs/Languages
