@@ -42,9 +42,9 @@ Needs output from image classification
 
 ![topographic diversity index map](/images/tdi.PNG)
 
-![segmented deltas based on preliminary classification data](/images/object_method_1.PNG)
+![segmented deltas based on preliminary classification data](/images/object_method_1.png)
 
-![vectorized delta polygons](/images/object_method_2.PNG)
+![vectorized delta polygons](/images/object_method_2.png)
 
 ### Programs/Languages
 - Google Colab Notebooks
