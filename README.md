@@ -5,15 +5,16 @@ Zhendong Cao, Phil Wernette, Jaap Nienhuis
 Apply image classification (see https://developers.google.com/earth-engine/guides/classification) and image segmentation (see https://en.wikipedia.org/wiki/Image_segmentation) to obtain landform characteristics of river deltas using Google Earth Engine code and available data.
 
 ## Approach
-Use the Google Earth Engine (EE) Python API with Jupyter notebooks running in Google Colab to subset EE datasets of interest, and train a machine learning model (Tensorflow) to segment delta landforms from non-delta landforms.
+Use the Google Earth Engine (EE) Python API with Jupyter notebooks running in Google Colab to subset EE datasets of interest, and (1) train a machine learning model (Supervised Classification) to obtain pixel-level probabilities of river delta deposits. (2) Apply connected components algorithms to group neighbouring pixels of high delta likelihood together retrieve delta landform statistics.
 
 1. **Image classification**
 Use supervised ML techniques to train a classifier to identify deltas https://colab.research.google.com/github/giswqs/geemap/blob/master/examples/notebooks/32_supervised_classification.ipynb
 Needs training dataset (pick cells we know are deltas)
 Needs data to source (collect rasters that we think will predict delta occurrence) 
-2. Image segmentation
-Use objective based methods to link neighbouring river delta pixels
-https://developers.google.com/earth-engine/guides/image_objects
+
+2. **Image segmentation**
+Use connected components object-based methods to group delta pixels https://developers.google.com/earth-engine/guides/image_objects
+Needs output from image classification
 
 ### Area of Interest
 ![sample aoi](/images/sample_map.PNG)
@@ -41,6 +42,10 @@ https://developers.google.com/earth-engine/guides/image_objects
 
 ![topographic diversity index map](/images/tdi.PNG)
 
+![segmented deltas based on preliminary classification data](/images/object_method_1.PNG)
+
+![vectorized delta polygons](/images/object_method_2.PNG)
+
 ### Programs/Languages
 - Google Colab Notebooks
 - Google Earth Engine
@@ -49,6 +54,10 @@ https://developers.google.com/earth-engine/guides/image_objects
 # TASKS
 - [x] Develop code to pull available datasets for Gulf of Mexico relevant to coastal deltas. (option is available to download the data to your Google Drive, if desired)
 - [x] Create training dataset of known/identified deltas and non-deltas.
+- [x] Create segmentation algorithm based on binary delta-nondelta pixels
+- [x] Reduce segmented deltas to vectors
 - [ ] Develop ML script to (1) train segmentation using 70/30 training/validation split, and (2) segment new imagery to identify deltas.
     - EE classifier?
     - TF classifier?
+- [ ] Join resulting data polygons with feeder river data
+
